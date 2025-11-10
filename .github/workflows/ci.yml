@@ -41,4 +41,5 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USER }}/aceest-fitness:ci-${{ github.run_id }} .
+          docker build -t aceest-fitness:ci-${{ github.run_id }} .
+
